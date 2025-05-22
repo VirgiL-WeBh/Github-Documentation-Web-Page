@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical documentation Page </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <nav id="navbar"> 
+    <header><h1>Git Documentation Page<h1></header>
+    <ul>
+    <li><a  href="#What_is_Git?" class="nav-link"> What is Git?</a></li>
+    <hr>
+    <li><a  href="#Installing_Git" class="nav-link"> Installing Git</a></li>
+    <hr>
+    <li><a  href="#Basic_Git_Commands" class="nav-link"> Basic Git Commands</a></li>
+    <hr>
+    <li><a  href="#Working_With_branches" class="nav-link"> Working with branches</a></li>
+    <hr>
+    <li><a href="#Collaborating_via_Pull_Requests" class="nav-link"> Collaborating via Pull Requests</a></li>
+      <hr>
+      </ul>
+      </nav> <br> <br>
+  <main id="main-doc">
+    <hr>
+  <section class="main-section" id="What_is_Git?">
+    <header><h2>What is Git?<h2></header>
+      <p>Git is a version control system used to track changes in files, primarily source code, during software development. 
+        <ul>
+  <li>Tracks changes in source code over time </li>
+  <li>Enables collaboration among developers </li>
+  <li>Maintains a detailed history of changes </li>
+      </ul>
+        It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. <br> <br>
+        <code>git --version </code>
+      </p>
+      <p>Git allows multiple developers to collaborate efficiently, providing tools to manage code versions, merge changes, and resolve conflicts. It helps keep a detailed history of every modification made to a project. <br> <br>
+        <code>git help </code>
+      </p>
+      <p>One of Git’s main advantages is that it is a distributed system, meaning each user has a full copy of the entire repository, including its complete history and branches.<br> <br> 
+        <code> git config --global user.name "Your Name" </code>
+      </p>
+    <hr>
+      
+    </section>
+<section class="main-section" id="Installing_Git">
+  <header>
+<h2>Installing Git</h2>
+</header>
+    <p>Installing Git is straightforward and available for all major operating systems. Users can download the latest version from the official Git website or use a package manager. <br> <br>
+      <code>sudo apt install git </code>
+    </p>
+    <p>On Windows, Git can be installed via the Git for Windows installer, which includes Git Bash, a terminal emulator for Git commands. 
+      <ul>
+  <li>Available for Windows, macOS, and Linux< </li>
+  <li>Install via package managers like apt, brew, or yum </li>
+  <li>Configure user name and email after installation </li>
+      </ul>
+      On macOS, Homebrew is a common choice for installation. <br> <br>
+      <code> brew install git </code>
+    </p>
+    <p>Linux users can install Git using the default package manager of their distribution. It’s recommended to always install the latest stable version for access to the newest features and fixes.<br> <br>
+    <code>git config --global user.email "you@example.com" </code>
+    </p>
+    </section>
+    <hr>
+<section class="main-section" id="Basic_Git_Commands">
+  <header><h2>Basic Git Commands</h2></header>
+  <p>Git provides a variety of commands for version control operations. 
+    <ul>
+  <li><code>git init</code>: Initialize a new repository </li>
+  <li><code>git add</code>: Stage changes for commit </li>
+  <li><code>git log</code>: View commit history </li>
+      </ul>
+    Some of the most commonly used include git init, git add, git commit, and git status. <br> <br>
+    <code>git init </code>
+  </p>
+  <p>These commands help initialize a repository, stage changes, save snapshots of your codebase, and check the current state of your working directory and staging area.  <br> <br>
+    <code>git add .</code>
+  </p>
+  <p>By mastering these basic commands, developers can manage their workflows more efficiently, ensuring that each change is properly tracked and documented. <br> <br>
+    <code>git commit -m "Initial commit" </code>
+  </p>
+    </section>
+    <hr>
+<section class="main-section" id="Working_With_branches">
+  <header><h2>Working with branches</h2> </header>
+  <p>Branches in Git allow developers to work on different features or bug fixes independently. Each branch is a separate line of development. <br> <br>
+ <code>git branch new-feature </code>
+  </p>
+  <p>Using branches makes it easier to experiment with new ideas without affecting the main codebase.
+    <ul>
+  <li>Create new branches to develop features </li>
+  <li>Merge branches to integrate changes </li>
+  <li>Use branching workflows like Git Flow </li>
+      </ul>
+     Once a feature is complete, it can be merged back into the main branch. <br> <br>
+ <code>git checkout new-feature </code>
+
+  </p>
+  <p>This branching model supports collaboration, parallel development, and better code management — especially in teams following workflows like Git Flow or GitHub Flow. <br> <br>
+ <code>git merge new-feature </code>
+  </p>
+    </section>
+    <hr>
+<section class="main-section" id="Collaborating_via_Pull_Requests">
+<header><h2>Collaborating via Pull Requests</h2></header>
+<p>GitHub is a web-based platform built around Git that provides remote repositories, issue tracking, and collaboration features like pull requests and code reviews. <br> <br>
+ <code>git remote add origin https://github.com/yourusername/repo.git </code>
+
+</p>
+<p>It allows developers to share their code, collaborate on projects, and contribute to open-source software. 
+  <ul>
+  <li>Fork repositories to create your own copy </li>
+  <li>Push changes to your remote branch </li>
+  <li>Create pull requests to propose changes </li>
+      </ul>
+  GitHub also integrates with CI/CD tools and project management systems. <br> <br>
+ <code>git push -u origin main </code>
+</p>
+<p>Using GitHub with Git gives teams a powerful toolkit for managing software development, from individual experiments to large-scale applications with many contributors.<br> <br>
+ <code>git clone https://github.com/otheruser/project.git </code>
+</p>
+    </section>
+    </main>  
+ </body> 
+  </html>
